@@ -9,7 +9,6 @@ public class divisor {
 		int j = 1;
 		
 		for(i = 1; i<=10000; i++){
-			System.out.println(i);
 			temp = 0;
 			for(j = 1; j <= i; j++ ){
 				if((i % j) == 0){
