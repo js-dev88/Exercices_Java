@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.util.Random;
 
 public class main {
@@ -10,7 +9,10 @@ public class main {
 		System.out.println("Nombre de lancés : " + nbLances);
 		
 	}
-	
+	/**Sous-routine du lancé de dés
+	 *@param prends un entier en entrée en 2 et 12 
+	 *@return retourne le nombre de lancés de dés nécessaires afin d'atteindre la valeur spécifiée en paramètre
+	 *@throws lance une exception si le paramètre d'entrée n'est pas compris entre 1 et 12*/
 	public static int rollDice(int numberToRoll){
 		
 		String errorMessage = "Number to roll for is out of range";
