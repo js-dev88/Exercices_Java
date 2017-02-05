@@ -32,13 +32,12 @@ public class dice {
 		int max = 6; 
 		int dice_1 = 0;
 		int dice_2 = 0;
-		Random rand_1 = new Random();
-		Random rand_2 = new Random();
+
 		int cpt = 0;
 		
 		while(dice_1 + dice_2 != numberToRoll){
-			dice_1 = rand_1.nextInt(max - min + 1 ) + min;
-			dice_2 = rand_2.nextInt(max - min + 1 ) + min; 
+			dice_1 = (int)(Math.random()*6) + 1;
+			dice_2 = (int)(Math.random()*6) + 1;
 			cpt++;
 		}
 			

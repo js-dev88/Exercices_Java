@@ -1,19 +1,23 @@
 
 import java.util.Random;
 import java.util.Scanner;
-	/** Cette classe permet de creer un questionnaire, d'y repondre puis de la corriger et d'en afficher le resultat */	 
+	/** 
+	 * Cette classe permet de creer un questionnaire, 
+	 * d'y repondre puis de la corriger et d'en afficher le resultat 
+	 */	 
 public class exercice47 {
-	/** nombre de questions contenues dans le questionnaire	 */
+	/** 
+	 * nbQuestions nombre de questions contenues dans le questionnaire	 
+	 * score resultat de l'utilisateur apres correction du questionnaire
+	 * tableau1 contenant le premier nombre de l'operation
+	 * tableau2 contenant le deuxieme nombre de l'operation
+	 * tableau3 contenant les reponses de l'utilisateur
+	 */
+	
 	static int nbQuestions = 10;
-	
-	 /** resultat de l'utilisateur apres correction du questionnaire */
-	int score =0;
-	
-	 /** tableau contenant le premier nombre de l'operation	 */ 
+	int score =0; 
 	int[] tableau1 = new int[nbQuestions];
-	/**  tableau contenant le deuxieme nombre de l'operation	 */ 
 	int[] tableau2 = new int[nbQuestions];
-	/** tableau contenant les reponses de l'utilisateur	 */
 	int[] tableau3 = new int[nbQuestions];
 	
 	/** Methode permettant d'initialiser le quizz. Rempli les deux tableaux par des valeurs aleatoires */
