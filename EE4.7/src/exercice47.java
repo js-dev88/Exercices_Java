@@ -53,12 +53,14 @@ public class exercice47 {
 				System.out.println("La bonne reponse etait : "+ (tableau1[i]+tableau2[i]));
 			}
 		}
-		if (score == nbQuestions)
-		System.out.println("Votre score est de : "+ score + ". Felicitations c'est un sans faute !");
-		else if (score >nbQuestions/2 && score <nbQuestions)
-		System.out.println("Votre score est de : "+ score + ". C'est tout juste correct !");
+		score *= 10;
+		
+		if (score == nbQuestions*10)
+		System.out.println("Votre score est de : "+ score + " points. Felicitations c'est un sans faute !");
+		else if (score > nbQuestions*5 && score < nbQuestions*10)
+		System.out.println("Votre score est de : "+ score + " points. C'est tout juste correct !");
 		else
-		System.out.println("Votre score est de : "+ score + ". C'est honteux !");
+		System.out.println("Votre score est de : "+ score + " points. C'est honteux !");
 	}
 					
 	public static void main(String[] args) {
